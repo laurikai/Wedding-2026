@@ -129,7 +129,7 @@ body {
 
 #accommodations {
     background: linear-gradient(rgba(253,252,249,0.85), rgba(253,252,249,0.85)),
-                url('https://www.frenchweddingstyle.com/wp-content/uploads/2024/05/chateau-la-tour-vaucros-provence-wedding-venue.jpg');
+                url('https://www.latourvaucros.com/wp-content/uploads/2019/03/chateau-la-tour-vaucros-chambre-1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -225,6 +225,14 @@ body {
 
 .event-details strong {
     font-weight: 400;
+}
+
+.schedule-footnote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 1rem;
+    opacity: 0.8;
 }
 
 /* Accommodations section */
