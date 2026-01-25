@@ -374,6 +374,13 @@ body {
     color: #8b7355;
 }
 
+.faq-item h4 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    color: #6b5a45;
+    font-weight: 400;
+}
+
 .faq-item p {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -451,53 +458,45 @@ body {
     .couple-names {
         font-size: 2.5rem;
     }
-    
+
     .wedding-date {
         font-size: 1.2rem;
     }
-    
+
     .venue-name {
         font-size: 1.4rem;
-    }
-    
-    .nav-container {
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    
-    .nav-item {
-        font-size: 14px;
-    }
-    
-    .section h2 {
-        font-size: 2.2rem;
-    }
-    
-    .hero-content {
-        padding: 20px;
-        margin: 0 20px;
-    }
-    
-    .schedule-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .day-card {
-        padding: 25px;
-    }
-    
-    .accommodation-details {
-        grid-template-columns: 1fr;
-        gap: 25px;
     }
 
     .nav-container {
         gap: 15px;
+        flex-wrap: wrap;
     }
 
     .nav-item {
         font-size: 13px;
+    }
+
+    .section h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .day-card {
+        padding: 25px;
+    }
+
+    .accommodation-details {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .faq-item {
@@ -511,6 +510,14 @@ body {
     .rsvp-button {
         padding: 15px 40px;
         font-size: 1.1rem;
+    }
+
+    /* Fix background images on mobile - iOS doesn't support fixed backgrounds */
+    .hero,
+    .schedule-section,
+    #accommodations,
+    .rsvp-section {
+        background-attachment: scroll;
     }
 }
 
