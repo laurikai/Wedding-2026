@@ -1,0 +1,528 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background-color: #fdfcf9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(253, 252, 249, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.nav-item {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    color: #8b7355;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('https://www.frenchweddingstyle.com/wp-content/uploads/2026/01/Tour-Vaucros-S.Rached-aerial-shot-chateau-venue-pool-trees.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    color: white;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.couple-names {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.wedding-date {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.venue-name {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.location {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.save-date p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.formal-invitation {
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 1rem !important;
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section:nth-child(even) {
+    background-color: #f7f5f2;
+}
+
+
+#accommodations {
+    background: linear-gradient(rgba(253,252,249,0.85), rgba(253,252,249,0.85)),
+                url('https://www.frenchweddingstyle.com/wp-content/uploads/2024/05/chateau-la-tour-vaucros-provence-wedding-venue.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #8b7355;
+    letter-spacing: 2px;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b7355;
+    font-weight: 400;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+/* Venue section */
+.venue-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.venue-text p {
+    margin: 0 auto 20px;
+}
+
+/* Schedule section */
+.schedule-section {
+    background: linear-gradient(rgba(247,245,242,0.85), rgba(247,245,242,0.85)),
+                url('https://www.latourvaucros.com/wp-content/uploads/2016/09/BENEDICTE-ARTHUR-MARIAGE-SUD-AVIGNON-TOUR-VAUCROS-428-1800x1200.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.day-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.day-card.highlight {
+    background: linear-gradient(135deg, #8b7355, #a08852);
+    color: white;
+}
+
+.day-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+.day-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.event-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.event-details strong {
+    font-weight: 400;
+}
+
+/* Accommodations section */
+.accommodations-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.accommodation-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.detail-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.detail-item h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #8b7355;
+}
+
+.detail-item ul {
+    list-style: none;
+    text-align: left;
+}
+
+.detail-item li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.detail-item li:before {
+    content: "•";
+    color: #8b7355;
+    position: absolute;
+    left: 0;
+}
+
+.payment-note {
+    background: #8b7355;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* RSVP section */
+.rsvp-section {
+    background: linear-gradient(rgba(139,115,85,0.9), rgba(139,115,85,0.9)),
+                url('https://www.latourvaucros.com/wp-content/uploads/2016/09/BENEDICTE-ARTHUR-MARIAGE-SUD-AVIGNON-TOUR-VAUCROS-428-1800x1200.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.rsvp-section h2 {
+    color: white;
+}
+
+.rsvp-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.rsvp-content p {
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.rsvp-details {
+    margin: 40px 0;
+}
+
+.rsvp-deadline {
+    font-size: 1.3rem !important;
+    margin-bottom: 25px !important;
+}
+
+.rsvp-button {
+    display: inline-block;
+    background: white;
+    color: #8b7355;
+    padding: 18px 50px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.rsvp-button:hover {
+    background: #f7f5f2;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.rsvp-note {
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1.1rem !important;
+}
+
+/* FAQ section */
+.faq-section {
+    background-color: #fdfcf9;
+}
+
+.faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    padding: 30px 40px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #8b7355;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: none;
+}
+
+.faq-item ul {
+    list-style: none;
+    margin: 15px 0;
+    padding-left: 0;
+}
+
+.faq-item li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.faq-item li:before {
+    content: "•";
+    color: #8b7355;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.contact-email {
+    text-align: center;
+    margin-top: 20px !important;
+}
+
+.contact-email a {
+    color: #8b7355;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-bottom: 1px solid #8b7355;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.contact-email a:hover {
+    color: #6b5a45;
+    border-color: #6b5a45;
+}
+
+/* Gifts section */
+.gifts-section {
+    background-color: #f7f5f2;
+}
+
+.gifts-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #8b7355;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .couple-names {
+        font-size: 2.5rem;
+    }
+    
+    .wedding-date {
+        font-size: 1.2rem;
+    }
+    
+    .venue-name {
+        font-size: 1.4rem;
+    }
+    
+    .nav-container {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-item {
+        font-size: 14px;
+    }
+    
+    .section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content {
+        padding: 20px;
+        margin: 0 20px;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .day-card {
+        padding: 25px;
+    }
+    
+    .accommodation-details {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .nav-container {
+        gap: 15px;
+    }
+
+    .nav-item {
+        font-size: 13px;
+    }
+
+    .faq-item {
+        padding: 25px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .rsvp-button {
+        padding: 15px 40px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    animation: fadeIn 0.8s ease-out;
+}
