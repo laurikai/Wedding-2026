@@ -55,11 +55,11 @@ body {
 /* Hero section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    background-color: #8b7355;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
                 url('https://www.frenchweddingstyle.com/wp-content/uploads/2026/01/Tour-Vaucros-S.Rached-aerial-shot-chateau-venue-pool-trees.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,11 +128,11 @@ body {
 
 
 #accommodations {
-    background: linear-gradient(rgba(253,252,249,0.85), rgba(253,252,249,0.85)),
+    background-color: #f7f5f2;
+    background-image: linear-gradient(rgba(253,252,249,0.85), rgba(253,252,249,0.85)),
                 url('https://www.latourvaucros.com/wp-content/uploads/2019/03/chateau-la-tour-vaucros-chambre-1.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .section h2 {
@@ -171,11 +171,11 @@ body {
 
 /* Schedule section */
 .schedule-section {
-    background: linear-gradient(rgba(247,245,242,0.85), rgba(247,245,242,0.85)),
+    background-color: #f7f5f2;
+    background-image: linear-gradient(rgba(247,245,242,0.85), rgba(247,245,242,0.85)),
                 url('https://www.latourvaucros.com/wp-content/uploads/2016/09/BENEDICTE-ARTHUR-MARIAGE-SUD-AVIGNON-TOUR-VAUCROS-428-1800x1200.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .schedule-grid {
@@ -291,11 +291,11 @@ body {
 
 /* RSVP section */
 .rsvp-section {
-    background: linear-gradient(rgba(139,115,85,0.9), rgba(139,115,85,0.9)),
+    background-color: #8b7355;
+    background-image: linear-gradient(rgba(139,115,85,0.9), rgba(139,115,85,0.9)),
                 url('https://www.latourvaucros.com/wp-content/uploads/2016/09/BENEDICTE-ARTHUR-MARIAGE-SUD-AVIGNON-TOUR-VAUCROS-428-1800x1200.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .rsvp-section h2 {
@@ -510,14 +510,6 @@ body {
     .rsvp-button {
         padding: 15px 40px;
         font-size: 1.1rem;
-    }
-
-    /* Fix background images on mobile - iOS doesn't support fixed backgrounds */
-    .hero,
-    .schedule-section,
-    #accommodations,
-    .rsvp-section {
-        background-attachment: scroll;
     }
 }
 
