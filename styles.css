@@ -208,6 +208,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: inherit;
+    white-space: nowrap;
 }
 
 .day-card h4 {
