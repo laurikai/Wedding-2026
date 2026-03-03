@@ -180,7 +180,7 @@ body {
 
 .schedule-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
@@ -205,7 +205,7 @@ body {
 }
 
 .day-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
     color: inherit;
     white-space: nowrap;
@@ -512,6 +512,35 @@ body {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Color Palette section */
+.color-palette-section {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(139, 115, 85, 0.2);
+    text-align: center;
+}
+
+.color-palette-section h4 {
+    font-size: 1.4rem;
+    color: #8b7355;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.color-palette-section p {
+    margin: 0 auto 15px;
+}
+
+.color-palette-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
